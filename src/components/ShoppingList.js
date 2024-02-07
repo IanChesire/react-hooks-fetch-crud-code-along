@@ -24,6 +24,9 @@ function ShoppingList() {
   function handleCategoryChange(category) {
     setSelectedCategory(category);
   }
+  function handleRemoveItemFromCart(deletedItem) {
+    console.log("In ShoppingCart:", deletedItem);
+  }
 
   const itemsToDisplay = items.filter((item) => {
     if (selectedCategory === "All") return true;
@@ -41,7 +44,7 @@ function ShoppingList() {
       />
       <ul className="Items">
         {itemsToDisplay.map((item) => (
-          <Item key={item.id} item={item} onUpdateIteme={handleUpdateItem} />
+          <Item key={item.id} item={item} onUpdateItem={handleUpdateItem} onDeleteItem={handleRemoveItemFromCart} setItems={setItems}/>
         ))}
       </ul>
     </div>

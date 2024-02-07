@@ -1,8 +1,7 @@
 import React from "react";
 
-function Item({ item }) {
+function Item({ item, onUpdateItem, onDeleteItem }) {
   function handleAddToCartClick() {
-    // add fetch request
     fetch(`http://localhost:4000/items/${item.id}`, {
       method: "PATCH",
       headers: {
@@ -12,8 +11,16 @@ function Item({ item }) {
         isInCart: !item.isInCart,
       }),
     })
-      .then((r) => r.json())
-      .then((updatedItem) => console.log(updatedItem));
+      .then((res) => res.json())
+      .then((updatedItem) => onUpdateItem(updatedItem));
+  }
+
+  function handleRemoveItemFromCart(items) {
+    const onUpdateItems = items.filter((item) => item.id !== onDeleteItem.id);
+    setItems(onUpdateItems);
+    fetch(`http://localhost:4000/items/${item.id}`, { method: "DELETE" })
+      .then((res) => res.json())
+      .then(() => onDeleteItem(item));
   }
   return (
     <li className={item.isInCart ? "in-cart" : ""}>
@@ -22,7 +29,9 @@ function Item({ item }) {
       <button onClick={handleAddToCartClick} className={item.isInCart ? "remove" : "add"}>
         {item.isInCart ? "Remove From" : "Add to"} Cart
       </button>
-      <button className="remove">Delete</button>
+      <button onClick={handleRemoveItemFromCart} className="remove">
+        Delete
+      </button>
     </li>
   );
 }

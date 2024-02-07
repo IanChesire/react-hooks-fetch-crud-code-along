@@ -1,145 +1,34 @@
 {
   "items": [
     {
-      "id": 1,
-      "name": "Yogurt",
-      "category": "Dairy",
-      "isInCart": false
-    },
-    {
-      "id": 2,
-      "name": "Pomegranate",
+      "name": "Avocado",
       "category": "Produce",
-      "isInCart": false
+      "isInCart": false,
+      "id": 29
     },
     {
-      "id": 3,
+      "name": "Banana",
+      "category": "Dessert",
+      "isInCart": false,
+      "id": 30
+    },
+    {
       "name": "Lettuce",
       "category": "Produce",
-      "isInCart": false
+      "isInCart": false,
+      "id": 31
     },
     {
-      "id": 4,
-      "name": "String Cheese",
+      "name": "Milk",
       "category": "Dairy",
-      "isInCart": false
+      "isInCart": false,
+      "id": 32
     },
     {
-      "id": 5,
-      "name": "Swiss Cheese",
-      "category": "Dairy",
-      "isInCart": false
-    },
-    {
-      "id": 6,
-      "name": "Cookies",
+      "name": "Orange",
       "category": "Dessert",
-      "isInCart": false
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
-      "id": 14
-    },
-    {
-      "id": 15
-    },
-    {
-      "name": "Beans",
-      "category": "Produce",
       "isInCart": false,
-      "id": 16
-    },
-    {
-      "name": "Peas",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 17
-    },
-    {
-      "name": "Shake",
-      "category": "Dairy",
-      "isInCart": false,
-      "id": 18
-    },
-    {
-      "name": "",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 19
-    },
-    {
-      "name": "Pawpaw",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 20
-    },
-    {
-      "name": "Pawpaw",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 21
-    },
-    {
-      "name": "Pawpaw",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 22
-    },
-    {
-      "name": "Pawpaw",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 23
-    },
-    {
-      "name": "Pawpaw",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 24
-    },
-    {
-      "name": "Beans",
-      "category": "Dairy",
-      "isInCart": false,
-      "id": 25
-    },
-    {
-      "name": "",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 26
-    },
-    {
-      "name": "",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 27
-    },
-    {
-      "name": "",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 28
+      "id": 33
     }
   ]
 }
